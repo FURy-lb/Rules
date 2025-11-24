@@ -1,0 +1,12 @@
+#!name=MyNanjing - Remove Splash Ads
+#!desc=Remove splash screen ads and startup ads for My Nanjing app
+#!author=Custom
+#!version=1.0
+#!category=AdBlock
+
+[Rewrite]
+# My Nanjing - Remove startup/splash ads
+https?:\/\/m\.mynj\.cn:\d+\/znmh_FEP\/loadpic\.jsp.*ad_pic.* - reject
+
+[MITM]
+hostname = m.mynj.cn
